@@ -48,7 +48,7 @@ app.use('/', require('./api/notifs'))
 
 
 /** Launch 🚀 */
-mongoose.connect("mongodb+srv://mo:mo123@cluster0.rgaym.gcp.mongodb.net/vd-crm?retryWrites=true&w=majority",() => {
+mongoose.connect("",() => {
     console.log("MONGOOSE CONNECTION ESTABLISHED")
 })
 .then(() => {
