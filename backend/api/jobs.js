@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken')
 const mongoose = require('mongoose')
 const job = require('../models/job')
 
+
 /**Models */
 const Bug = require('../models/job')
 const { route } = require('./bugs')
@@ -15,7 +16,6 @@ const { route } = require('./bugs')
  * @description - gets all jobs
  * 
  */
-
  router.get('/job/get', (req,res)=>{
      job.find({})
      .then((jobs)=>{
